@@ -300,7 +300,7 @@ def fix_log(log: Incident, db: Session):
                 db.commit()
 
                 # Save output.
-                prauto_capture = features.get("auto_capture", True)
+                auto_capture = features.get("auto_capture", True)
                 log_file = "/tmp/syshealer_script.log"
 
                 if auto_capture:
